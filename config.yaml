@@ -1,0 +1,39 @@
+baseURL: "https://andersondalmina.com.br"
+languageCode: "en-us"
+title: "Ânderson Dalmina"
+theme: PaperMod
+paginate: 5
+
+params:
+  defaultTheme: auto
+  ShowReadingTime: true
+
+  homeInfoParams:
+    Title: "Aí, eu sou o Ander \U0001F44B"
+    Content: Estudante de engenharia de computação, desenvolvedor de software, maker e minimalista.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/andersondalmina"
+    - name: twitter
+      url: "https://twitter.com/andersondalmina"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/andersonzorrerdalmina"
+
+menu:
+  main:
+    - identifier: busca
+      name: Busca
+      url: /busca/
+      weight: 10
+
+    - identifier: sobre
+      name: Sobre
+      url: /sobre/
+      weight: 20
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
