@@ -1,16 +1,24 @@
 baseURL: "https://andersondalmina.com.br"
-languageCode: "en-us"
+languageCode: "pt-BR"
 title: "Ânderson Dalmina"
 theme: PaperMod
-paginate: 5
+paginate: 10
+
+googleAnalytics:
+
+minify:
+  disableXML: true
+  minifyOutput: true
 
 params:
+  env: production
   defaultTheme: auto
   ShowReadingTime: true
+  ShowShareButtons: true
 
   homeInfoParams:
-    Title: "Aí, eu sou o Ander \U0001F44B"
-    Content: Estudante de engenharia de computação, desenvolvedor de software, maker e minimalista.
+    Title: Olá, eu sou o Ander 👋
+    Content: Engenheiro de software, maker e minimalista.
 
   socialIcons:
     - name: github
@@ -22,15 +30,20 @@ params:
 
 menu:
   main:
+    - identifier: arquivo
+      name: Arquivo
+      url: /arquivo/
+      weight: 1
+
     - identifier: busca
       name: Busca
       url: /busca/
-      weight: 10
+      weight: 2
 
     - identifier: sobre
       name: Sobre
       url: /sobre/
-      weight: 20
+      weight: 3
 
 outputs:
   home:
